@@ -23,7 +23,18 @@ The following preprocessing steps were undertaken:
 * Removing URLs from the tweet 
 
 Before:
-> RT @treasonstickers: .@realDonaldTrump when are you going to visit and embrace the people in the US with Coronavirus? https://t.co/lEvq3S4iâ€¦
-After:
-> when are you going to visit and embrace the people in the us with coronavirus 
+> RT @treasonstickers: .@realDonaldTrump when are you going to visit and embrace the people in the US with Coronavirus? https://t.co/lEvq3S4iâ€¦   
 
+After:
+> when are you going to visit and embrace the people in the us with coronavirus    
+
+Removing stop words from the text,  the tweets yielded do not require these words as they hold little relevance in gauging the sentiment and context of the meaning of the word. 
+
+The stop words removed included pronouns, prepositions, conjunctions and articles. The words which implied negation such as no, not, didn’t, etc. were not removed as these words contribute to the sentiment of the tweets.
+To understand better, we can consider the following tweet:
+
+> “new england journal of medicine coronavirus could be no worse than flu”
+
+However, if we had removed the word “no” then the entire tweet changes to:
+
+> “new england journal of medicine coronavirus could be worse than flu”
